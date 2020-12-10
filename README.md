@@ -1,6 +1,8 @@
 # portafolio-v
 
-> Portafolio de Victoriano Ju&aacute;rez, contruido en Visual Studio Code, subido desde la terminal de Ubuntu con Git a Github 💚💚💚💚💚💚💚💚
+> Portafolio de Victoriano Ju&aacute;rez, construido en Visual Studio Code, subido desde la terminal de Ubuntu con Git a Github 💚💚💚💚💚💚💚💚
+
+
 
 # Interesante
 
