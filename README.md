@@ -8,5 +8,5 @@
 
 * Utilizar Git desde la terminal te da super poderes en el Desarrollador Web.
 
-* Si has llegado &aacute;ca **ve a ver el curso de** [Git y Github](https://platzi.com/cursos/git-github/ "Git-Github") _ en Platzi y se m&aacute;s productivo_
+* Si has llegado &aacute;ca **ve a ver el curso de** [Git y Github](https://platzi.com/cursos/git-github/ "Git-Github") _en Platzi y se m&aacute;s productivo_
  
