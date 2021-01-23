@@ -81,7 +81,7 @@ h5 {
 
 :root {
   --github: #000000;
-  --linkedin: #3b9be4;
+  --linkedin-in: #1d8add;
   --twitter: #55acee;
   --instagram: #e4405f;
 }
@@ -127,8 +127,8 @@ h5 {
   background: var(--github);
 }
 
-.redes-container ul li .linkedin:hover {
-  background: var(--linkedin);
+.redes-container ul li .linkedin-in:hover {
+  background: var(--linkedin-in);
 }
 
 .redes-container ul li .twitter:hover {
