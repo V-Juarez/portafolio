@@ -32,8 +32,8 @@ header {
 }
 
 footer {
-  height: 10%;
-  width: 10%;
+  height: 100%;
+  width: 100%;
 
   .social-icons {
     position: fixed;
@@ -52,10 +52,10 @@ footer {
   .copy {
     font-size: 1rem;
     position: fixed;
-    bottom: 0.2rem;
+    bottom: 0.4rem;
     right: 1rem;
     text-align: right;
     padding: 1rem;
-  color: set-text-color($primary-color);
+    color: set-text-color($primary-color);
   }
 }

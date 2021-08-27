@@ -16,7 +16,7 @@
 .home__name {
   font-size: 5rem;
   padding-bottom: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-bottom: 2px solid #fff;
 }
 .home__name--last {
@@ -100,6 +100,40 @@
 .nav .menu-nav.open {
   transform: translateY(0);
 }
+.nav .menu-nav__item {
+  transform: traslateX(100vw);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav.active > a {
+  color: #ff562f;
+}
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: 300;
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__link:hover {
+  color: #ff562f;
+}
+
+.menu-nav__item:nth-last-child(1) {
+  transition-delay: 0.25s;
+}
+
+.menu-nav__item:nth-last-child(2) {
+  transition-delay: 0.35s;
+}
+
+.menu-nav__item:nth-last-child(3) {
+  transition-delay: 0.45s;
+}
+
+.menu-nav__item:nth-last-child(4) {
+  transition-delay: 0.55s;
+}
 
 body {
   background: #272727;
@@ -131,8 +165,8 @@ header {
 }
 
 footer {
-  height: 10%;
-  width: 10%;
+  height: 100%;
+  width: 100%;
 }
 footer .social-icons {
   position: fixed;
@@ -149,7 +183,7 @@ footer .social-icons a:hover {
 footer .copy {
   font-size: 1rem;
   position: fixed;
-  bottom: 0.2rem;
+  bottom: 0.4rem;
   right: 1rem;
   text-align: right;
   padding: 1rem;
