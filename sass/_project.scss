@@ -1,17 +1,16 @@
 .projects {
-  padding-bottom: 2 rem;
+  padding-bottom: 2rem;
 
   &__bio-image {
     height: 30vh;
     width: 100%;
-
     background: 
       linear-gradient(
         to right,
         rgba($primary-color, 0.9),
         rgba($primary-color, 0.3)
       ),
-      url('../assets/git.jpg') center top;
+      url('../img/model-1.jpg') center top;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -20,7 +19,7 @@
 
     .text-secondary {
       font-size: 2rem;
-      margin-bottom: 2rem ;
+      margin-bottom: 2rem;
     }
   }
 
@@ -30,7 +29,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
-
   }
 
   &__item {
@@ -49,7 +47,7 @@
       top: 100%;
       left: 0;
       height: 100%;
-      width:  100%;
+      width: 100%;
       background: $secondary-color;
       opacity: 0;
       @include transition-ease;
@@ -88,15 +86,15 @@
     }
   }
 
-
   .social-icons {
     display: flex;
     flex-direction: column;
   }
 
   footer {
-    transform: 
+    transform:
       rotate(90deg)
       translate(-3rem, -5rem);
   }
+  
 }
