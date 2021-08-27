@@ -6,7 +6,7 @@ body {
   background: $primary-color;
   color: set-text-color($primary-color);
   height: 100vh;
-  font-family: 'fjalla-one', noto-sans;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
 }
 
@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+.text-secondary {
+  color: $secondary-color;
+}
+
 header {
   position: fixed;
   z-index: 2;
@@ -26,12 +30,7 @@ header {
   padding: 1rem;
 }
 
-.main {
-  height: 100%;
-  width: 100%;
-}
-
-footer {
+main {
   height: 100%;
   width: 100%;
 
@@ -39,7 +38,7 @@ footer {
     position: fixed;
     bottom: 1rem;
     left: 1rem;
-    
+
     a {
       padding: 0.4rem;
       @include transition-ease;
@@ -49,13 +48,14 @@ footer {
       }
     }
   }
-  .copy {
-    font-size: 1rem;
-    position: fixed;
-    bottom: 0.4rem;
-    right: 1rem;
-    text-align: right;
-    padding: 1rem;
-    color: set-text-color($primary-color);
-  }
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  text-align: right;
+  padding: 1rem;
+  color: set-text-color($primary-color);
 }

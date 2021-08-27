@@ -17,7 +17,6 @@
     background: set-text-color($primary-color);
     @include transition-ease;
 
-
     &::before {
       content: '';
       position: absolute;
@@ -41,7 +40,6 @@
     &.open {
       transform: rotate(720deg);
       background: transparent;
-
 
       &::before {
         transform: rotate(45deg) translate(5px, 8px);
@@ -80,17 +78,21 @@
     transform: translateY(-100%);
     @include transition-ease;
 
-
     &.open {
       transform: translateY(0);
     }
-    &__item {
-      transform: traslateX(100vw);
-      @include transition-ease;
-    }
 
-    &.active > a {
-      color: $secondary-color;
+    &__item {
+      transform: translateX(100vw);
+      @include transition-ease;
+
+      &.open {
+       transform: translateX(0); 
+      }
+
+      &.active > a {
+        color: $secondary-color;
+      }
     }
 
     &__link {
@@ -109,7 +111,7 @@
 }
 
 @for $i from 1 through 4 {
-  .menu-nav__item:nth-last-child(#{$i}) {
+  .menu-nav__item:nth-child(#{$i}) {
     transition-delay: ($i * 0.1s) + 0.15s;
   }
 }
