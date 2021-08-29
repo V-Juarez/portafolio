@@ -384,6 +384,18 @@
   .contact__list {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .home .image {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .home .image__photo {
+    height: 300px;
+    width: 30%;
+  }
 }
 @media screen and (min-width: 1600px) {
   .projects__bio-image {

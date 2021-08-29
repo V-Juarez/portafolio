@@ -87,6 +87,20 @@
   .contact__list {
     grid-template-columns: repeat(3, 1fr);
   }
+    .home {
+    
+    .image {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-between;
+      align-items: center;
+      &__photo {
+        height: 300px;
+        width: 30%;
+      }
+    }
+  }
 
 }
 
