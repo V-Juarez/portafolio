@@ -97,10 +97,10 @@
 
     &__link {
       display: inline-block;
-      font-size: 2rem;
-      text-transform: uppercase;
+      font-size: 1.5rem;
+      // text-transform: uppercase;
       padding: 2rem 0;
-      font-weight: 300;
+      font-weight: 500;
       @include transition-ease;
 
       &:hover {

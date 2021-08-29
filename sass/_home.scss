@@ -1,27 +1,53 @@
 .home {
-  height: 100%;
-  padding-top: 40vh;
-  overflow: hidden;
-  align-items: center;
-  text-align: center;
-  background: 
-    linear-gradient(
-      to right,
-      rgba($primary-color, 0.9),
-      rgba($primary-color, 0.3)
-    ),
-    url('../assets/censored-anonymous.jpg') center top;
-    background-size: cover;
+  background-color: $primary-color;
+  height: 100vh;
+  // height: 100%;
+  // padding-top: 40vh;
+  // overflow: hidden;
+  // align-items: center;
+  // text-align: center;
+  // background: 
+  //   linear-gradient(
+  //     to right,
+  //     rgba($primary-color, 0.9),
+  //     rgba($primary-color, 0.3)
+  //   ),
+  //   url('../assets/censored-anonymous.jpg') center top;
+  // background-size: cover;
+  
+  .image {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding:  10%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
 
-  &__name {
-    font-size: 5rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid set-text-color($primary-color);
-
+    &__photo {
+      height: 300px;
+      width: 30%;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+    &__name {
+      overflow: hidden;
+      
+    &--first {
+      font-size: 3.5rem;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid set-text-color($primary-color);
+  
+    }
     &--last {
       color: $secondary-color;
       font-weight: 700;
+      }
     }
   }
 }

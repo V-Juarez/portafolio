@@ -43,6 +43,16 @@
   .contact__list {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  // .home {
+  //   .image {
+  //     height: 40vh;
+  //     &__photo {
+  //       display: grid;
+  //       grid-template-columns: repeat(2, 1fr);
+  //     }
+  //   }
+  // }
 }
 
 @include media-lg {
@@ -54,10 +64,19 @@
   .contact__list {
     grid-template-columns: repeat(3, 1fr);
   }
+
 }
 
 @include media-xl {
   .projects__bio-image {
     height: 50vh;
+  }
+  .home {
+    .image {
+      &__photo {
+        height: 600px;
+        width: 40%;
+      }
+    }
   }
 }

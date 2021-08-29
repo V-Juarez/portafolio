@@ -5,21 +5,38 @@
 }
 
 .home {
-  height: 100%;
-  padding-top: 40vh;
-  overflow: hidden;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../assets/censored-anonymous.jpg") center top;
-  background-size: cover;
+  background-color: #272727;
+  height: 100vh;
 }
-.home__name {
-  font-size: 5rem;
+.home .image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 10%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.home .image__photo {
+  height: 300px;
+  width: 30%;
+}
+.home .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.home .image__name {
+  overflow: hidden;
+}
+.home .image__name--first {
+  font-size: 3.5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #fff;
 }
-.home__name--last {
+.home .image__name--last {
   color: #ff562f;
   font-weight: 700;
 }
@@ -112,10 +129,9 @@
 }
 .nav .menu-nav__link {
   display: inline-block;
-  font-size: 2rem;
-  text-transform: uppercase;
+  font-size: 1.5rem;
   padding: 2rem 0;
-  font-weight: 300;
+  font-weight: 500;
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav__link:hover {
@@ -343,6 +359,11 @@
 @media screen and (min-width: 1600px) {
   .projects__bio-image {
     height: 50vh;
+  }
+
+  .home .image__photo {
+    height: 600px;
+    width: 40%;
   }
 }
 body {
