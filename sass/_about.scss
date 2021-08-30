@@ -1,5 +1,5 @@
 .about {
-  padding-bottom: 2 rem;
+  padding-bottom: 4 rem;
 
   &__bio-image {
     height: 50vh;
@@ -9,9 +9,9 @@
       linear-gradient(
         to right,
         rgba($primary-color, 0.9),
-        rgba($primary-color, 0.3)
+        rgba($primary-color, 0.7)
       ),
-      url('../assets/git.jpg') center top;
+      url('https://i.ibb.co/nbBfDrR/git.jpg') center top;
     background-size: cover;
     display: flex;
     flex-direction: column;

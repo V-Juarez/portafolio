@@ -155,12 +155,12 @@
 }
 
 .about {
-  padding-bottom: 2 rem;
+  padding-bottom: 4 rem;
 }
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../assets/git.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.7)), url("https://i.ibb.co/nbBfDrR/git.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -209,7 +209,7 @@
 .projects__bio-image {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../assets/git.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("https://i.ibb.co/nbBfDrR/git.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -288,7 +288,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.9)), url("../assets/git.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.8)), url("https://i.ibb.co/nbBfDrR/git.jpg") center top;
   background-size: cover;
 }
 .contact h2 {
