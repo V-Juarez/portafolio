@@ -7,13 +7,24 @@
       justify-content: center;
       &__photo {
         align-items: stretch;
-        height: 200px;
+        height: 140px;
         width: 50%;
       }
       &__name {
         justify-content: center;
-      }
+        &--first {
+          font-size: 3rem;
+        }
+        &--last {
+          font-weight: 5rem;
+        }
+      } 
     }
+  }
+  footer {
+    transform:
+      rotate(90deg)
+      translate(-3rem, -5rem);
   }
 }
 

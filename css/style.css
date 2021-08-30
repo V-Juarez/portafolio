@@ -306,7 +306,7 @@
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 300px) {
   .home {
     height: 80vh;
   }
@@ -317,11 +317,21 @@
   }
   .home .image__photo {
     align-items: stretch;
-    height: 200px;
+    height: 140px;
     width: 50%;
   }
   .home .image__name {
     justify-content: center;
+  }
+  .home .image__name--first {
+    font-size: 3rem;
+  }
+  .home .image__name--last {
+    font-weight: 5rem;
+  }
+
+  footer {
+    transform: rotate(90deg) translate(-3rem, -5rem);
   }
 }
 @media screen and (min-width: 768px) {
