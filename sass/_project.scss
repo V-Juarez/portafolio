@@ -85,6 +85,13 @@
       color: set-text-color(set-text-color($secondary-color));
     }
   }
+  div {
+    img {
+      justify-content: center;
+  }
+
+  }
+
 
   .social-icons {
     display: flex;

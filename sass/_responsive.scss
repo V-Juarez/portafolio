@@ -27,6 +27,17 @@
       rotate(90deg)
       translate(-3rem, -5rem);
   }
+  .card__education {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      // flex-direction: column;
+      .container__card {
+        align-items: center;
+
+      }
+    }
+  }
 }
 
 @include media-md {
