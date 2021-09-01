@@ -43,6 +43,8 @@
       background: lighten($primary-color, 10%);
       padding: 0.5rem;
       border-bottom: 5px solid $secondary-color;
+      // grid-template: rows;
+      align-items: stretch;
 
       h2, h3 {
         margin: 0.9rem 0;
@@ -70,23 +72,29 @@
 
 .card__education {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 100vh;
-
-  h2 {
-      margin: 0.5rem 0;
-    }
-  
+  height: 100vh;
   width: 100%;
-  min-width: 320px;
-  padding-top: 60px;
+
+  width: 100%;
+  // min-width: 320px;
+  padding-top: 100px;
   padding-right: 60px;
   padding-bottom: 60px;
   padding-left: 60px;
   text-align: center;
   
+  h2 {
+      margin: 0.5rem 0;
+      color: $secondary-color;
+      font-weight: 600;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+  
   .container {
     display: flex;
-    height: 316px;
+    height: 80vh;
     justify-content: space-around;
     align-items: center;
     &__card {
@@ -106,7 +114,8 @@
         width: 100px;
         height: 120px;
         border-radius: $border-radius 0 0 $border-radius;
-        object-fit: cover;      }
+        object-fit: cover;      
+      }
     
       .btn {
         position: absolute;
@@ -127,7 +136,8 @@
         
         a {
           text-decoration: none;
-          color: white;
+          color: $primary-color;
+          font-weight: 400;
         }
         i {
         margin-left: 5px;
@@ -140,7 +150,7 @@
 
 .container__text {
   padding: 20px 20px 0;
-  h1 {
+  h2 {
     color: $secondary-color;
     font-weight: 400;
     padding-top: 10px;
@@ -150,13 +160,13 @@
   p {
     font-size: 0.9rem;
   }
-  .container__text__timing {
+  &__timing {
     display: flex;
     margin: 20px 0 10px;
-    .container__text__timing_time {
+    &__timing_time {
       margin-right: 40px;
     }
-    h2 {
+    h3 {
       justify-content: flex-start;
       align-content: flex-start;
       margin-bottom: 5px;

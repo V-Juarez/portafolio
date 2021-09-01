@@ -188,6 +188,7 @@
   background: #414141;
   padding: 0.5rem;
   border-bottom: 5px solid aqua;
+  align-items: stretch;
 }
 .about .jobs__job h2, .about .jobs__job h3 {
   margin: 0.9rem 0;
@@ -206,10 +207,10 @@
 
 .card__education {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
-  min-width: 320px;
-  padding-top: 60px;
+  width: 100%;
+  padding-top: 100px;
   padding-right: 60px;
   padding-bottom: 60px;
   padding-left: 60px;
@@ -217,10 +218,14 @@
 }
 .card__education h2 {
   margin: 0.5rem 0;
+  color: aqua;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .card__education .container {
   display: flex;
-  height: 316px;
+  height: 80vh;
   justify-content: space-around;
   align-items: center;
 }
@@ -260,7 +265,8 @@
 }
 .card__education .container__card .btn a {
   text-decoration: none;
-  color: white;
+  color: #272727;
+  font-weight: 400;
 }
 .card__education .container__card .btn i {
   margin-left: 5px;
@@ -270,7 +276,7 @@
 .container__text {
   padding: 20px 20px 0;
 }
-.container__text h1 {
+.container__text h2 {
   color: aqua;
   font-weight: 400;
   padding-top: 10px;
@@ -279,14 +285,14 @@
 .container__text p {
   font-size: 0.9rem;
 }
-.container__text .container__text__timing {
+.container__text__timing {
   display: flex;
   margin: 20px 0 10px;
 }
-.container__text .container__text__timing .container__text__timing_time {
+.container__text__timing__timing_time {
   margin-right: 40px;
 }
-.container__text .container__text__timing h2 {
+.container__text__timing h3 {
   justify-content: flex-start;
   align-content: flex-start;
   margin-bottom: 5px;
@@ -294,14 +300,14 @@
   font-weight: 400;
   color: aqua;
 }
-.container__text .container__text__timing a {
+.container__text__timing a {
   text-decoration: none;
 }
-.container__text .container__text__timing .btn a {
+.container__text__timing .btn a {
   color: black;
   font-weight: bold;
 }
-.container__text .container__text__timing span {
+.container__text__timing span {
   color: white;
   font-weight: bold;
   font-size: 1rem;
@@ -437,16 +443,16 @@
     font-weight: 5rem;
   }
 
-  footer {
-    transform: rotate(90deg) translate(-3rem, -5rem);
+  .projets {
+    height: 80vh;
+  }
+  .projets__items img {
+    height: 100px;
+    width: 100px;
   }
 
-  .card__education .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .card__education .container .container__card {
-    align-items: center;
+  footer {
+    transform: rotate(90deg) translate(-3rem, -5rem);
   }
 }
 @media screen and (min-width: 768px) {
