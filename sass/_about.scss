@@ -46,12 +46,16 @@
       // grid-template: rows;
       align-items: stretch;
 
+
       h2, h3 {
         margin: 0.9rem 0;
       }
       h6 {
         margin: 1rem 0;
         font-size: 0.9rem;
+      }
+      p {
+        justify-content: center;
       }
     }
   }
