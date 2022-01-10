@@ -285,6 +285,23 @@
   -webkit-line-clamp: 12;
   overflow: hidden; }
 
+a.cards--links {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  width: 150px;
+  height: 60px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: rgba(97, 93, 93, 0.6);
+  border-radius: 10px;
+  color: white; }
+
+a:hover.cards--links {
+  color: aqua;
+  background-color: blur(5px); }
+
 .projects {
   padding-bottom: 2rem; }
   .projects__bio-image {

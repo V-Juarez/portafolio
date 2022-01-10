@@ -211,3 +211,22 @@
   -webkit-line-clamp: 12;
   overflow: hidden;
 }
+
+a.cards--links {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  width: 150px;
+  height: 60px;
+  font-family: $inter;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: $surface-color;
+  border-radius: 10px;
+  color: white;
+}
+
+a:hover.cards--links {
+  color: aqua;
+  background-color: blur(5px);
+}
