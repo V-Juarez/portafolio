@@ -210,40 +210,35 @@
   overflow: hidden;
 }
 
-a.btn {
-  height: 50px;
-  line-height: 50px;
-  margin: 0 auto;
-  padding: 60px 40px;
-  justify-self: baseline;
-  // text-align: center;
-  // text-align: center;
-  // display: inline-table;
-  // text-align: center;
-  // background: $surface-color;
-  // color: white;
-  // text-decoration: none;
-  // padding: 20px 36px;
-  // margin-left: 20px auto;
-  // border-radius: 40px;
-  // font-size: 1.25em;
-  // transition: 0.25s;
-  // background-color: $surface-color;
-  // text-align: center;
-  // font-family: $inter;
-  // font-weight: 700;
-  // cursor: pointer;
+
+// border: 1px solid #cccccc;
+// border-radius: 5px;
+
+
+.btn {
+  width: auto;
+  display: block;
+  margin: auto;
+  width: 130px;
+  height: 80px;
+  padding: 15px 20px 20px 20px;
+  background-color: gray;
+  border-radius: 25px;
   align-content: center;
-  padding: 60px 20px;
-  text-align: center;
-  color: whitesmoke;
-  font-size: 1.5em;
   font-weight: 700;
+  border: 1px solid rgba(255, 251, 251, 0.979);
+  margin: 25px auto;
+  text-align: center;
+  font-size: large;
+  cursor: pointer;
+  font-family: $inter;
+  font-size: 18px;
+  // font-size: 1em;
 }
 
-a.btn:hover {
-  letter-spacing: 2px;
-  color: aqua;
-  background-color: $surface-color;
-  background-color: blur(5px);
+.btn:hover {
+  // letter-spacing: 2px;
+  color: white;
+  background-color: aqua blur(5px);
+
 }

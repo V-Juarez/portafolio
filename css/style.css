@@ -285,24 +285,28 @@
   -webkit-line-clamp: 12;
   overflow: hidden; }
 
-a.btn {
-  height: 50px;
-  line-height: 50px;
-  margin: 0 auto;
-  padding: 60px 40px;
-  justify-self: baseline;
+.btn {
+  width: auto;
+  display: block;
+  margin: auto;
+  width: 130px;
+  height: 80px;
+  padding: 15px 20px 20px 20px;
+  background-color: gray;
+  border-radius: 25px;
   align-content: center;
-  padding: 60px 20px;
+  font-weight: 700;
+  border: 1px solid rgba(255, 251, 251, 0.979);
+  margin: 25px auto;
   text-align: center;
-  color: whitesmoke;
-  font-size: 1.5em;
-  font-weight: 700; }
+  font-size: large;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 18px; }
 
-a.btn:hover {
-  letter-spacing: 2px;
-  color: aqua;
-  background-color: rgba(97, 93, 93, 0.6);
-  background-color: blur(5px); }
+.btn:hover {
+  color: white;
+  background-color: aqua blur(5px); }
 
 .projects {
   padding-bottom: 2rem; }
