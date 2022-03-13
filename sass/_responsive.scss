@@ -1,12 +1,13 @@
 @include mobile {
   .home {
-    height: 80vh;
+    height: 90vh;
+    display: grid;
     .image {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
       justify-content: center;
+      align-items: center;
       &__photo {
-        align-items: stretch;
+        margin-left: 60px;
         height: 140px;
         width: 50%;
       }
@@ -87,15 +88,20 @@
   }
 
   .home {
-    
-    .image {
+    height: 90vh;
+    display: grid;
+    justify-content: center;
+    .image{
       display: flex;
-      flex-wrap: wrap;
-      align-items: stretch;
-      justify-content: center;
-      &__photo {
-        height: 300px;
-        width: 30%;
+    }
+    &__photo {
+      align-items: center;
+      margin-left: 120px;
+        .img  {
+          height: 140px;
+          width: 50%;
+          height: 140px;
+          width: 50%;
       }
     }
   }
@@ -111,10 +117,10 @@
     grid-template-columns: repeat(3, 1fr);
   }
     .home {
-    
+      height: 100vh;
+      display: grid;
     .image {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
       align-items: stretch;
       justify-content: space-between;
       align-items: center;
