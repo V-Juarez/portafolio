@@ -7,8 +7,12 @@
 .home {
   background-color: #272727;
   height: 100vh;
+  display: grid;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .home .image {
+  display: grid;
   height: 100%;
   width: 100%;
   display: flex;
