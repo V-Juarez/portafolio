@@ -9,7 +9,7 @@
       linear-gradient(
         to right,
         rgba($primary-color, 0.9),
-        rgba($primary-color, 0.7)
+        rgba($primary-color, 0.9)
       ),
       url('https://i.ibb.co/nbBfDrR/git.jpg') center top;
     background-size: cover;
@@ -20,7 +20,8 @@
 
     p {
       margin-bottom: 2rem;
-
+      font-size: 1.2rem;
+      font-family: $inter;
     }
 
   }
@@ -38,28 +39,55 @@
 
   .jobs {
     width: 60vw;
-    margin: 2rem auto 0 auto;
+    margin: 2rem auto 2rem auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
 
     &__job {
       background: lighten($primary-color, 10%);
-      padding: 0.5rem;
-      border-bottom: 5px solid $secondary-color;
+      padding: 0.9rem;
+      bottom: 10px;
+      border-bottom: 4px solid $secondary-color;
       // grid-template: rows;
       align-items: stretch;
+      justify-content: center;
+      display: flex;
+      gap: 20px;
+      
+      &--img {
+        align-self: center;
+
+        img {
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+        }
+      }
 
 
-      h2, h3 {
-        margin: 0.9rem 0;
-      }
-      h6 {
-        margin: 1rem 0;
-        font-size: 0.9rem;
-      }
-      p {
-        justify-content: center;
+      &--info {
+        h2, h3 {
+          margin: 1.5rem 0;
+          font-weight: 600;
+          font-family: $encode;
+        }
+        .platzi:hover {
+          color: rgb(52, 168, 6);
+        }
+        .punto_crea:hover {
+          color: rgba(207, 204, 24, 0.808);
+        }
+        h6 {
+          margin: 1rem 0;
+          font-size: 1.2rem;
+        }
+        p {
+          justify-content: center;
+          font-family: $inter;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
       }
     }
   }
@@ -208,37 +236,4 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 12;
   overflow: hidden;
-}
-
-
-// border: 1px solid #cccccc;
-// border-radius: 5px;
-
-
-.btn {
-  width: auto;
-  display: block;
-  margin: auto;
-  width: 130px;
-  height: 80px;
-  padding: 15px 20px 20px 20px;
-  background-color: gray;
-  border-radius: 25px;
-  align-content: center;
-  font-weight: 700;
-  border: 1px solid rgba(255, 251, 251, 0.979);
-  margin: 25px auto;
-  text-align: center;
-  font-size: large;
-  cursor: pointer;
-  font-family: $inter;
-  font-size: 18px;
-  // font-size: 1em;
-}
-
-.btn:hover {
-  // letter-spacing: 2px;
-  color: white;
-  background-color: aqua blur(5px);
-
 }

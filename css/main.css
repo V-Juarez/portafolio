@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&family=Roboto&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,21 +5,15 @@
 }
 
 .home {
-  height: 100%;
-  display: flex;
+  background-color: #272727;
 }
 .home .image {
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  align-self: center;
-  justify-content: center;
-  gap: 8em;
+  flex-direction: row;
 }
 .home .image__photo {
-  order: 1;
   height: 300px;
-  width: 23%;
+  width: 30%;
 }
 .home .image img {
   height: 100%;
@@ -29,12 +22,7 @@
   object-fit: cover;
 }
 .home .image__name {
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
-  font-family: "League Spartan", sans-serif;
-  align-self: center;
-  line-height: 3.5rem;
 }
 .home .image__name--first {
   font-size: 3.5rem;
@@ -45,23 +33,6 @@
 .home .image__name--last {
   color: aqua;
   font-weight: 700;
-}
-.home .image a.btn {
-  width: 100px;
-  margin-top: 5px;
-  padding: 2px 5px;
-  background: #1ea1a1;
-  color: #fff;
-  border-radius: 15px;
-  font-weight: 700;
-  font-family: "League Spartan", sans-serif;
-  font-size: 1.3rem;
-  text-decoration: none;
-  text-align: center;
-}
-.home .image a.btn:hover {
-  color: #fff;
-  background-color: #0c5e5e;
 }
 
 .menu-btn {
@@ -183,7 +154,7 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.9)), url("https://i.ibb.co/nbBfDrR/git.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.7)), url("https://i.ibb.co/nbBfDrR/git.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -192,8 +163,6 @@
 }
 .about__bio-image p {
   margin-bottom: 2rem;
-  font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
 }
 .about__bio {
   width: 80%;
@@ -206,49 +175,26 @@
 }
 .about .jobs {
   width: 60vw;
-  margin: 2rem auto 2rem auto;
+  margin: 2rem auto 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
 .about .jobs__job {
   background: #414141;
-  padding: 0.9rem;
-  bottom: 10px;
-  border-bottom: 4px solid aqua;
+  padding: 0.5rem;
+  border-bottom: 5px solid aqua;
   align-items: stretch;
-  justify-content: center;
-  display: flex;
-  gap: 20px;
 }
-.about .jobs__job--img {
-  align-self: center;
+.about .jobs__job h2, .about .jobs__job h3 {
+  margin: 0.9rem 0;
 }
-.about .jobs__job--img img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-}
-.about .jobs__job--info h2, .about .jobs__job--info h3 {
-  margin: 1.5rem 0;
-  font-weight: 600;
-  font-family: "League Spartan", sans-serif;
-}
-.about .jobs__job--info .platzi:hover {
-  color: #34a806;
-}
-.about .jobs__job--info .punto_crea:hover {
-  color: rgba(207, 204, 24, 0.808);
-}
-.about .jobs__job--info h6 {
+.about .jobs__job h6 {
   margin: 1rem 0;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
-.about .jobs__job--info p {
+.about .jobs__job p {
   justify-content: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 .about .social-icons {
   display: flex;
@@ -366,7 +312,7 @@
 .card__tagline {
   display: block;
   margin: 1em 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.8em;
   color: white;
 }
@@ -383,11 +329,36 @@
   /* color: rgb(59, 56, 56); */
   background-color: rgba(97, 93, 93, 0.6);
   backdrop-filter: blur(5px);
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 12;
   overflow: hidden;
+}
+
+.btn {
+  width: auto;
+  display: block;
+  margin: auto;
+  width: 130px;
+  height: 80px;
+  padding: 15px 20px 20px 20px;
+  background-color: gray;
+  border-radius: 25px;
+  align-content: center;
+  font-weight: 700;
+  border: 1px solid rgba(255, 251, 251, 0.979);
+  margin: 25px auto;
+  text-align: center;
+  font-size: large;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: aqua blur(5px);
 }
 
 .projects {
@@ -497,43 +468,7 @@
 }
 
 @media screen and (min-width: 300px) {
-  .home .image {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    align-self: center;
-    justify-content: center;
-    gap: 1em;
-  }
-  .home .image__photo {
-    height: 50vw;
-    width: 50vw;
-    order: 1;
-  }
-  .home .image__photo img {
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    object-fit: cover;
-  }
-  .home .image__name {
-    margin: 1rem;
-    line-height: 2.9rem;
-  }
-
-  .jobs__job {
-    flex-wrap: wrap;
-  }
-  .jobs__job--img {
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-  }
-  .jobs__job--info h2, .jobs__job--info h3 {
-    margin: -1.5rem 0;
-  }
-
   .projets {
-    display: grid;
     height: 80vh;
   }
   .projets__items img {
@@ -546,21 +481,6 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .home .image {
-    flex-wrap: wrap-reverse;
-  }
-  .home .image__photo {
-    height: 10vw;
-    width: 10vw;
-    order: 1;
-  }
-  .home .image__photo img {
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    object-fit: cover;
-  }
-
   .menu-btn {
     visibility: hidden;
   }
@@ -603,26 +523,8 @@
   .contact__list {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .jobs__job {
-    flex-wrap: nowrap;
-  }
 }
 @media screen and (min-width: 1024px) {
-  .home .image {
-    flex-wrap: nowrap;
-  }
-  .home .image__photo {
-    height: 300px;
-    width: 23%;
-  }
-  .home .image__photo img {
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    object-fit: cover;
-  }
-
   .projects {
     display: grid;
   }
@@ -638,38 +540,16 @@
   .projects__bio-image {
     height: 50vh;
   }
-
-  .jobs__job {
-    flex-wrap: nowrap;
-  }
-
-  .home .image {
-    flex-wrap: nowrap;
-  }
-  .home .image__photo {
-    height: 300px;
-    width: 23%;
-  }
-  .home .image__photo img {
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    object-fit: cover;
-  }
 }
 body {
   background: #272727;
   color: #fff;
   height: 100vh;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Encode Sans", sans-serif;
   line-height: 1;
 }
 
-h1 {
-  font-weight: 700;
-}
-
-h2, h3 {
+h1, h2, h3 {
   font-weight: 400;
 }
 
@@ -690,7 +570,7 @@ header {
 }
 
 main {
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 main .social-icons {
@@ -716,4 +596,4 @@ footer {
   color: #fff;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
