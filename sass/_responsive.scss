@@ -1,29 +1,50 @@
 @include mobile {
   .home {
-    height: 90vh;
-    display: grid;
     .image {
-      display: grid;
+      display: flex;
+      flex-wrap: wrap-reverse;
+      align-self: center;
       justify-content: center;
-      align-items: center;
+      gap: 1em;
       &__photo {
-        margin-left: 60px;
-        height: 140px;
-        width: 50%;
+        height: 50vw;
+        width: 50vw;
+        order: 1;
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+          object-fit: cover;        
+        }
       }
       &__name {
-        justify-content: center;
-        &--first {
-          font-size: 3rem;
-        }
-        &--last {
-          font-weight: 5rem;
-        }
-      } 
+        margin: 1rem;
+        line-height: 2.9rem;
+      }
     }
   }
+
+  .jobs {
+    &__job {
+      flex-wrap: wrap;
+      
+      &--img {
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+      }
+
+      &--info {
+        h2, h3 {
+          margin: -1.5rem 0;
+        }
+      }
+    }
+  }
+
   
   .projets {
+    display: grid;
     height: 80vh;
     &__items {
       img {
@@ -42,6 +63,24 @@
 }
 
 @include media-md {
+
+  .home {
+    .image {
+      flex-wrap: wrap-reverse;
+      &__photo {
+        height: 10vw;
+        width: 10vw;
+        order: 1;
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+          object-fit: cover;        
+        }
+      }
+    }
+  }
+
   .menu-btn {
     visibility: hidden;
   }
@@ -72,6 +111,7 @@
   }
 
   .projects {
+    display: grid;
     &__bio-image {
       height: 40vh;
     }
@@ -87,28 +127,49 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .home {
-    height: 90vh;
-    display: grid;
-    justify-content: center;
-    .image{
-      display: flex;
-    }
-    &__photo {
-      align-items: center;
-      margin-left: 120px;
-        .img  {
-          height: 140px;
-          width: 50%;
-          height: 140px;
-          width: 50%;
-      }
+  .jobs {
+    // display: grid;
+    // width: 30vw;
+
+    &__job {
+      // flex-direction: column;
+      // display: flex;
+      flex-wrap: nowrap;
     }
   }
+  
 }
 
 @include media-lg {
+  .home {
+    .image {
+      flex-wrap: nowrap;
+      &__photo {
+        height: 300px;
+        width: 23%;
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+          object-fit: cover;        }
+      }
+    }
+  }
+  
+  // .jobs {
+  //   // display: grid;
+  //   // width: 30vw;
+
+  //   &__job {
+  //     // flex-direction: column;
+  //     // display: flex;
+  //     // flex-wrap: wrap;
+  //   }
+  // }
+
+
   .projects {
+    display: grid;
     &__items {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -116,46 +177,37 @@
   .contact__list {
     grid-template-columns: repeat(3, 1fr);
   }
-    .home {
-      height: 100vh;
-      display: grid;
-    .image {
-      display: grid;
-      align-items: stretch;
-      justify-content: space-between;
-      align-items: center;
-      &__photo {
-        height: 300px;
-        width: 30%;
-      }
-    }
-  }
-
 }
 
 @include media-xl {
+  
   .projects__bio-image {
     height: 50vh;
   }
+
+  .jobs {
+    // display: grid;
+    // width: 30vw;
+    &__job {
+      // flex-direction: column;
+      // display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+  
   .home {
-    height: 100vh;
     .image {
-      justify-content: space-between;
-      align-items: center;
+      flex-wrap: nowrap;
       &__photo {
-        height: 600px;
-        width: 40%;
-      }
-      &__name {
-        // overflow: hidden;
-        // justify-content: center;
-        &--first {
-          font-size: 5rem;
-        }
-        &--last {
-          font-weight: 5rem;
-        }
+        height: 300px;
+        width: 23%;
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+          object-fit: cover;        }
       }
     }
   }
+
 }
