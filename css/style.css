@@ -50,7 +50,7 @@
   width: 100px;
   margin-top: 5px;
   padding: 2px 5px;
-  background: #1ea1a1;
+  background: rgb(30, 161, 161);
   color: #fff;
   border-radius: 15px;
   font-weight: 700;
@@ -61,7 +61,7 @@
 }
 .home .image a.btn:hover {
   color: #fff;
-  background-color: #0c5e5e;
+  background-color: rgb(12, 94, 94);
 }
 
 .menu-btn {
@@ -235,7 +235,7 @@
   font-family: "League Spartan", sans-serif;
 }
 .about .jobs__job--info .platzi:hover {
-  color: #34a806;
+  color: rgb(52, 168, 6);
 }
 .about .jobs__job--info .punto_crea:hover {
   color: rgba(207, 204, 24, 0.808);
@@ -360,7 +360,7 @@
 }
 
 .card__title h3:before {
-  color: #3b3838;
+  color: rgb(59, 56, 56);
 }
 
 .card__tagline {
@@ -528,7 +528,8 @@
     justify-content: center;
     align-self: center;
   }
-  .jobs__job--info h2, .jobs__job--info h3 {
+  .jobs__job--info h2,
+.jobs__job--info h3 {
     margin: -1.5rem 0;
   }
 
@@ -610,11 +611,12 @@
 }
 @media screen and (min-width: 1024px) {
   .home .image {
-    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
   }
   .home .image__photo {
-    height: 300px;
-    width: 23%;
+    height: 15vw;
+    width: 15vw;
+    order: 1;
   }
   .home .image__photo img {
     height: 100%;
@@ -634,21 +636,18 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (max-width: 1600px) {
   .projects__bio-image {
     height: 50vh;
   }
 
-  .jobs__job {
-    flex-wrap: nowrap;
-  }
-
   .home .image {
-    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
   }
   .home .image__photo {
-    height: 300px;
-    width: 23%;
+    height: 20vh;
+    width: 20vh;
+    order: 1;
   }
   .home .image__photo img {
     height: 100%;

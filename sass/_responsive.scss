@@ -6,17 +6,20 @@
       align-self: center;
       justify-content: center;
       gap: 1em;
+
       &__photo {
         height: 50vw;
         width: 50vw;
         order: 1;
+
         img {
           height: 100%;
           width: 100%;
           border-radius: 100%;
-          object-fit: cover;        
+          object-fit: cover;
         }
       }
+
       &__name {
         margin: 1rem;
         line-height: 2.9rem;
@@ -27,7 +30,7 @@
   .jobs {
     &__job {
       flex-wrap: wrap;
-      
+
       &--img {
         align-items: center;
         justify-content: center;
@@ -35,17 +38,18 @@
       }
 
       &--info {
-        h2, h3 {
+        h2,
+        h3 {
           margin: -1.5rem 0;
         }
       }
     }
   }
 
-  
   .projets {
     display: grid;
     height: 80vh;
+
     &__items {
       img {
         height: 100px;
@@ -57,8 +61,7 @@
 
   footer {
     transform:
-      rotate(90deg)
-      translate(-3rem, -5rem);
+      rotate(90deg) translate(-3rem, -5rem);
   }
 }
 
@@ -67,15 +70,17 @@
   .home {
     .image {
       flex-wrap: wrap-reverse;
+
       &__photo {
         height: 10vw;
         width: 10vw;
         order: 1;
+
         img {
           height: 100%;
           width: 100%;
           border-radius: 100%;
-          object-fit: cover;        
+          object-fit: cover;
         }
       }
     }
@@ -112,12 +117,15 @@
 
   .projects {
     display: grid;
+
     &__bio-image {
       height: 40vh;
     }
+
     &__items {
       grid-template-columns: repeat(2, 1fr);
     }
+
     .text-secondary {
       font-size: 3rem;
     }
@@ -128,84 +136,75 @@
   }
 
   .jobs {
-    // display: grid;
-    // width: 30vw;
-
     &__job {
-      // flex-direction: column;
-      // display: flex;
       flex-wrap: nowrap;
     }
   }
-  
+
 }
 
 @include media-lg {
+
   .home {
     .image {
-      flex-wrap: nowrap;
+      flex-wrap: wrap-reverse;
+
       &__photo {
-        height: 300px;
-        width: 23%;
+        height: 15vw;
+        width: 15vw;
+        order: 1;
+
         img {
           height: 100%;
           width: 100%;
           border-radius: 100%;
-          object-fit: cover;        }
+          object-fit: cover;
+        }
       }
     }
   }
-  
-  // .jobs {
-  //   // display: grid;
-  //   // width: 30vw;
-
-  //   &__job {
-  //     // flex-direction: column;
-  //     // display: flex;
-  //     // flex-wrap: wrap;
-  //   }
-  // }
 
 
   .projects {
     display: grid;
+
     &__items {
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
   .contact__list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @include media-xl {
-  
+
   .projects__bio-image {
     height: 50vh;
   }
 
-  .jobs {
-    // display: grid;
-    // width: 30vw;
-    &__job {
-      // flex-direction: column;
-      // display: flex;
-      flex-wrap: nowrap;
-    }
-  }
-  
+  // .jobs {
+  //   &__job {
+  //     flex-wrap: nowrap;
+  //   }
+  // }
+
   .home {
     .image {
-      flex-wrap: nowrap;
+      flex-wrap: wrap-reverse;
+
       &__photo {
-        height: 300px;
-        width: 23%;
+        height: 20vh;
+        width: 20vh;
+        order: 1;
+
         img {
           height: 100%;
           width: 100%;
           border-radius: 100%;
-          object-fit: cover;        }
+          object-fit: cover;
+        }
       }
     }
   }
