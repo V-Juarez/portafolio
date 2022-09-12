@@ -407,6 +407,11 @@
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+.projects__bio-image .title-project {
+  text-align: center;
+  padding: 10px 10px;
+  margin: 20px;
+}
 .projects__items {
   width: 60vw;
   margin: 2rem auto 0 auto;
@@ -462,6 +467,9 @@
 }
 .projects div img {
   justify-content: center;
+}
+.projects div .subtitle {
+  text-align: center;
 }
 .projects .social-icons {
   display: flex;
@@ -519,7 +527,6 @@
     margin: 1rem;
     line-height: 2.9rem;
   }
-
   .jobs__job {
     flex-wrap: wrap;
   }
@@ -532,7 +539,6 @@
 .jobs__job--info h3 {
     margin: -1.5rem 0;
   }
-
   .projets {
     display: grid;
     height: 80vh;
@@ -541,7 +547,6 @@
     height: 100px;
     width: 100px;
   }
-
   footer {
     transform: rotate(90deg) translate(-3rem, -5rem);
   }
@@ -561,11 +566,9 @@
     border-radius: 100%;
     object-fit: cover;
   }
-
   .menu-btn {
     visibility: hidden;
   }
-
   .nav {
     visibility: visible;
   }
@@ -583,11 +586,9 @@
   .nav .menu-nav__link {
     font-size: 1.5rem;
   }
-
   .about__bio {
     font-size: 1.5rem;
   }
-
   .projects {
     display: grid;
   }
@@ -600,11 +601,9 @@
   .projects .text-secondary {
     font-size: 3rem;
   }
-
   .contact__list {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .jobs__job {
     flex-wrap: nowrap;
   }
@@ -624,14 +623,12 @@
     border-radius: 100%;
     object-fit: cover;
   }
-
   .projects {
     display: grid;
   }
   .projects__items {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .contact__list {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -640,7 +637,6 @@
   .projects__bio-image {
     height: 50vh;
   }
-
   .home .image {
     flex-wrap: wrap-reverse;
   }

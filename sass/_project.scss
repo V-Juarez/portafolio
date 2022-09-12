@@ -21,15 +21,25 @@
       font-size: 2rem;
       margin-bottom: 2rem;
     }
+
+  .title-project {
+    text-align: center;
+    padding: 10px 10px;
+    margin: 20px;
   }
+}
+  
+
 
   &__items {
     width: 60vw;
     margin: 2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 2rem; 
   }
+
+
 
   &__item {
     position: relative;
@@ -90,7 +100,11 @@
       justify-content: center;
   }
 
+  .subtitle {
+    text-align: center;
   }
+
+}
 
 
   .social-icons {
